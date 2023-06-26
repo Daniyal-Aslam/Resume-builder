@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+/* TYPOGRAPHY BEGIN */
+h1 {
+  font-size: 34px;
+}
+h2 {
+  font-size: 24px;
+}
+ul {
+  padding: 0 !important;
+  margin: 0;
+}
+h6 {
+  margin-bottom: 0;
+}
+p {
+  font-size: 16px;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+/* THEME BUTTON BEGIN */
+/* THEME CHECKBOX STYLING BEGIN*/
+ 
+/* THEME CHECKBOX STYLING END */
+.theme-btn {
+  background: rgb(4, 136, 93);
+  padding:8px 30px;
+  font-size: 14px;
+  border: 1px solid rgb(4, 136, 93);
+  color: #fff;
+  transition: 0.6s ease;
+  border-radius: 4px;
+} 
+.theme-btn-two,.theme-btn{
+  display: inline-block;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.theme-btn-two {
+  background:rgb(4, 136, 93);
+  font-size: 16px;
+  transition: 0.6s ease;
+  border-radius: 4px;
+  color:#fff;
+  padding:5px 40px; 
+  outline: 0; 
+  border: 1px solid rgb(4, 136, 93);
+  cursor: pointer;
+}
+.form-field-main-box{
+  margin-top: 25px;
+}
+.theme-btn-two:hover,.theme-btn:hover {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+/* THEME BUTTON BEGIN */ 
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+input.invalid {
+  background-color: #ffdddd;
+}
+.date--input{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2,1fr);
+} 
+.step.finish {
+  background-color: rgb(6, 45, 40);
+}
+#input-container,#input-container-qualities{
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ gap: 15px; 
+}
+.skill_main_container{
+  margin-top: 30px;
+}
+.qualities_container button,.skill_main_container button{
+  background: #fff;
+  padding: 10px 30px;
+  display: block;
+  cursor: pointer;
+  color: #062d28;
+  border: 2px solid #062d28;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+:is(.qualities_container,.skill_main_container) h5{
+margin-bottom: 15px;
+}
+.stripe_container :is(input.invalid[type="file"]){
+  color: #000; 
+}
+/* GRID LAYOUT SETTING BEGIN */
+.stripe_container{
+  width: 50%;
+  max-width: 50%;
+  margin:20px auto;
+  padding: 40px;
+  background: hsl(172.31deg 76.47% 10%);
+  color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}  
+.stripe_row{
+  margin-top: 30px;
+}
+.stripe_container :is(input,textarea){
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border:1.5px solid #fff;
+  border-radius: 5px;
+  outline: 0;
+  color: #000;
+}
+.stripe_container :is(input[type="file"]){ 
+  color: #fff;
+}
+.text_box{
+  display: block;
+  margin: 15px 0;
+}
+.stripe_container label{
+  color: #fff;
+  font-size: 17px;
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 400;
+}
+.stripe_itegration_head{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #fff;
+
+} 
+.stripe_row .colst-md-8 fieldset{
+  padding: 30px;
+}
+/* GRID LAYOUT SETTING END */
+/* MULTIPLE FORM FEILDS BEGIN */
+ 
+/* RESUME BUILDER STYLES BEGIN */
+.resume{
+  padding: 30px 0;
+}
+.profile_bio{
+  padding: 30px 0;
+}
+.profile_bio h1{
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.profile_bio :is(h1,h4){
+  margin-left:35px;
+}
+.profile_bio p{ 
+  margin:35px;
+  line-height: 30px;
+  color: #000;
+}
+.detail_head_bar{
+  background:#424753;
+}
+.detail_head_bar_light{
+  background: #ebebeb;  
+}
+.detail_head_bar_light,
+.detail_head_bar{
+  position: relative;
+}
+.detail_head_bar_light::before,
+.detail_head_bar::before{
+  content: '';
+background: hsl(160.45deg 94.29% 27.45%);
+display: block;
+position: absolute;
+left: 0;
+height: 100%;
+width: 20px;
+}
+.details_seprator li{
+  margin-bottom: 15px;
+}
+.details_seprator li i{
+  margin-right: 10px;
+}
+.detail_head_bar h2,.detail_head_bar_light h2{
+  font-size: 20px;
+  padding: 10px 0;
+  margin: 35px;
+}
+.profile_image img{
+  border-top-left-radius: 10px;
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+  object-position: top;
+}
+.qualities_container{
+padding-top: 20px;  
+}
+.qualities-list{
+  margin-left: 35px;
+}
+.skill_main_container{
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fff;
+}
+.card_sidebar{
+  background: hsl(172.31deg 76.47% 10%);
+  padding:0 0 30px 0;
+  color: #fff;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.card_sidebar ul{
+  margin:10px 35px;
+}
+.card_sidebar ul li a{
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+#generate_pdf{
+  background: hsl(172.31deg 76.47% 10%);
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 15px;
+  cursor: pointer;
+  padding: 15px 60px;
+  border-radius: 5px;
+  border: 0;
+}
+.theme-btn.dark{
+  text-decoration: none;
+  cursor: pointer;
+}
+.theme-btn.dark:hover{  
+  background: hsl(172.31deg 76.47% 10%);
+  color: #fff;
+}
+.resume .row{
+  border-radius: 10px;  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.error_resume{
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+.add_data{
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform:capitalize;
+  margin: 30px 0;
+}
+.theme-btn.dark{
+  display: block;
+  margin:30px auto;
+  width: fit-content;
+}
+.stripe_itegration_head span{
+ background: rgb(4, 136, 93);
+ padding: 10px;
+ color: #fff;
+ border-radius: 5px;
+}
+.skill_container{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(7,1fr); 
+  margin-left: 35px;
+}
+.skill_container .skill{
+  background: hsl(172.31deg 76.47% 10%);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  text-transform:capitalize;
+  font-weight: 400;
+}
+.details_seprator ul li b,
+.details_seprator ul li strong{  
+  color: #fff;
+  display: block; 
+} 
+.qualities-list li{
+  list-style-type:square;
+}
+/* RESUME BUILDER STYLES END */
+/* INTEGRATED ACCOUNT STYLES END */
+/* --------------------------------------------------------RESPONSIVE LAYOUT STYLING BEGIN ---------------------------------------------------------------------- */
+@media screen and (max-width:1024px) {
+  .main_container,.stripe_container{
+    width: 100%;
+    max-width: 100%;
+  }
+  .stripe_itegration_head h2{
+    font-size: 28px;
+    text-align: left;
+  } 
+}
+@media screen and (max-width:990px){
+  .stripe_row{
+    flex-direction: column;
+  }
+  .stripe_itegration_head h2{
+    font-size: 22px;
+  }
+  .stripe_itegration_head img{ 
+    width: 50px;
+  }
+  #progressbar{ 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }  
+  .colst-lg-4{
+    padding-bottom: 0;
+  }
+  #progressbar #confirm{ 
+    order: 4;
+  }
+  #progressbar  #payment{
+    order: 2;
+  }
+  #progressbar #personal{
+    order: 3;
+  }
+  #progressbar #account{
+    order: 1;
+  }
+  #progressbar >*{
+    width: 25%;
+  }
+  .colst-lg-4{
+    border-bottom: 2px dashed #BFB9B9;
+    padding-bottom: 20px;
+    border-right: 0;
+    padding-right: 0;
+  }
+  #progressbar >*{
+    width: 100%;
+  }  
+  #progressbar  #personal::after{
+    display: none;
+  }
+  .form-field-main-box label{ 
+    font-size: 16px;
+  }
+  .form-field-main-box{
+    flex-direction: column;
+  }.form-field-main-box >*{
+    width: 100%;
+  }
+  #edit_setting{
+    width: 100%;
+  }
+  .form-field-main-box .form-field-box:first-child{
+    border-right: 0;  
+    padding-right: 0;
+  }
+  .stripe_row .colst-lg-4,
+  .stripe_row .colst-md-8{
+    width: 100%;
+    max-width: 100%;
+  }
+  .multiple_input_box{
+    flex-direction: column;
+  }
+  #progressbar li p{
+    font-size: 12px;
+  }
+  .multiple_input_box>*{
+    width: 100%;
+  }
+  .stripe_row .colst-md-8{
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width:767px){
+  .previous.action-button-previous,
+  .next.action-button{
+    display: inline-block;
+    width: 45%;
+  }
+  #account_details label{
+    flex-direction: column;
+    row-gap: 15px;
+    text-align: center;
+    justify-content: center;
+  }
+  #account_details label input,#account_details label #enter_ammount{
+    text-align: center;
+  }
+  .main_container{
+    padding: 20px;
+  }
+  #msform #account_details label img{
+    margin-right: 0;
+  }
+}
